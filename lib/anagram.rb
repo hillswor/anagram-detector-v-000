@@ -16,7 +16,7 @@ end
 binding.pry
 
 def match(anagram)
-  anagram.select do |word|
-    word.split("").sort
+  anagram.collect do |word|
+    word.split("")
   end
 end
