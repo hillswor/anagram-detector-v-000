@@ -15,8 +15,8 @@ class Anagram
 end
 binding.pry
 
-def match(word_array)
-  word_array.select do |word|
-    word.split("")
+def match(anagram)
+  anagram.select do |word|
+    word.split("").sort
   end
 end
