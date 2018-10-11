@@ -9,14 +9,10 @@ class Anagram
   end
 
   def match(anagram)
-    @word.split(" ")
+    anagram.collect do |word|
+      word.split("").sort == @word.sort
+    end
   end
 
 end
-binding.pry
 
-def match(anagram)
-  anagram.collect do |word|
-    word.split("").sort == @word.sort
-  end
-end
